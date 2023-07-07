@@ -1,0 +1,213 @@
+/* Linking the PaytoneOne, Fredoka
+	Antic and Rubik font families*/
+@font-face {
+	font-family: PaytoneOne;
+	src: url(../fonts/PaytoneOne-Regular.ttf);
+}
+
+@font-face {
+	font-family: Fredoka;
+	src:url(../fonts/Fredoka-VariableFont_wdth\,wght.ttf)
+}
+
+@font-face {
+	font-family: Antic;
+	src:url(../fonts/Antic-Regular.ttf)
+}
+
+@font-face {
+	font-family: Rubik;
+	src: url(../fonts/Rubik-VariableFont_wght.ttf);
+}
+
+/* To have no margin and 'Antic' font family  */
+body {
+
+    margin: 0px;
+    font-family: Rubik;
+	
+}
+
+/* To set font family of all h1 and h2 tags to Fredoka */
+h1, h2, h3 {
+
+	font-family: Segoe UI;
+
+}
+
+/* To set the font family and line height for all p tags */
+p {
+
+	font-family: Rubik;
+	line-height: 2;
+	
+}
+
+/* To style the header of the pages */
+.header {
+
+	background: #ffebcc;
+	text-align: center;
+	padding-top: 15px;
+
+}
+
+
+/* To style the buttons of the navigation bar of the pages */
+.button {
+	
+	background-color:#ffebcc;
+	padding: 15px 40px;
+	text-align: center;
+	font-size: 25px;
+	border-style: hidden;
+	transition-duration: 0.6s;
+	font-family: Rubik;
+	font-weight: bold;
+	
+}
+
+/* To add a color to the active/current link */
+.active {
+
+	border-top:0px ;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 6px solid black;
+	background-color:#ffebcc;
+	padding: 15px 40px;
+	text-align: center;
+	font-size: 25px;
+	transition-duration: 0.6s;
+	font-family: Rubik;
+	font-weight: bold;
+
+}
+
+/* To change the cursor to pointer on hover */
+.active:hover {
+
+	cursor: pointer;
+
+}
+
+/* To change the cursor to pointer and color on hover */
+.header .button:hover {
+
+	border-top:0px ;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 6px solid black;
+	cursor: pointer;
+
+}
+
+/* To style the footer of the pages */
+.footer {
+
+	padding: 10px;
+	background:#ffebcc;
+    height: 100%;
+    display: flex;
+	padding-left: 100px;
+	padding-right: 100px;
+
+}
+
+.footer a {
+
+	color: black;
+	text-decoration: none;
+
+}
+
+.bname {
+
+	padding: 50px;
+	position: relative;
+	flex: 70%;
+
+}
+
+.blogo {
+
+	padding-top: 50px;
+	flex:30%;
+	text-align: center;
+
+}
+
+/* To edit the image of the blogo div*/
+.blogo img {
+
+	width: 350px;
+	height: 350px;
+
+}
+
+/* To edit the image within the footer */
+.bname img {
+
+	height: 25px;
+	width: 25px;
+	margin: 5px;
+
+}
+
+/* To style how the books are displayed */
+.zoombook {
+
+	text-align: center;
+	margin: 0px 50px 15px 30px;
+	transition: all .2s ease-in-out;
+	cursor: pointer;
+
+}
+
+/* To edit the size of all the images within the zoombook div */ 
+.zoombook > img {
+
+    width: 90%;
+
+}
+
+/* To increase the size of the div on hover */
+.zoombook:hover {
+
+	transform: scale(1.1);
+
+}		
+
+/* To style the image slider */ 
+.slider {
+                
+	height: 300px;
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+	
+ }
+
+/* To edit the image of the banner div*/
+.banner  img {
+
+	width: 100%;
+
+ }
+
+/* To style the go to top button and keep it on top of all contents of the page */
+#gotop {
+
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	left: 48%;
+	z-index: 99;
+	border: none;
+	font-size: 20px;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 50%;
+	background-color: blanchedalmond;
+  
+}

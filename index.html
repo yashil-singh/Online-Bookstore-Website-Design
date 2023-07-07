@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+		<meta name="description" content="Book Seller's Website">
+		<meta name="keywords" content="HTML, CSS, JS">
+		<meta name="author" content="Yashil Lal Singh">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>WeSellB | Home</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        
+        <style type="text/css">
+
+            /* To change the opacity of the background image */
+            .bgimg {
+
+                opacity: 0.7;
+
+            }
+
+            /* To style the welcome div */
+            .welcome {
+                
+                position: relative;
+                width: 100%;
+                height: 100%;
+
+            }
+
+            /* To edit the welcome text */
+            .welcometext {
+
+                position: absolute;
+                top: 260px;
+                left: 80px;
+                font-size: 18px;
+                padding: 20px;
+                width: 50%;
+
+            }
+
+            /* To edit the logo */
+            .logo {
+
+                position: absolute;
+                top: 165px;
+                right: 80px;
+                opacity: 0.8;
+                transition: all .2s ease-in-out;
+
+            }   
+            
+            /* To style the div which displays the books */
+            .booksection {
+
+                padding: 50px;
+                display: flex;
+
+            }
+
+            /* To change the cursor to pointer when hovering over the button div*/
+            .button:hover {
+
+                cursor: pointer;
+
+
+            }
+
+            /* To style the topbooks div */
+            .topbooks {
+
+                padding: 10px;
+                display: flex;
+                text-align: left;
+                height: 520px;
+                background: #FFF9F0;
+                transition: all .2s ease-in-out;
+                line-height: 1.5;
+
+            }
+
+            /* To add top padding in the zoombook div that is in the the topbooks div */
+            .topbooks .zoombook {
+
+                padding-top: 20px;
+
+            }
+
+
+        </style>
+    </head> 
+
+    <body> 
+        
+        <!-- To add a button which is used to go to top of the page -->
+        <button onclick="topFunction()" id="gotop">/\</button> 
+
+        <!-- The Main div which contains all the content within it -->
+        <div class = "main"> 
+
+            <!-- This div contains the contents found in the header of a page  -->
+            <div class = "header">
+
+                <h1 style="font-size: 50px;font-family: PaytoneOne;">WeSellB</h1>
+
+
+                <a href="index.html"><input type="button" class="active" value="Home"></a>
+
+                <a href="pages/products.html"><input type="button" class="button"  value="Products"></a>
+
+                <a href="pages/blogs.html"><input type="button" class="button" value="Blog"></a>
+
+                <a href="pages/research.html"><input type="button" class="button" value="Research"></a>
+
+                <a href="pages/contactus.html"><input type="button" class="button" value="Contact Us"></a>
+
+            </div>
+            
+            <!-- This div contains the welcome text, logo and a background image-->
+            <div class = "welcome">
+
+                <img src="images/Book_Collage.jpg"
+                width="100%"
+                height="100%"
+                class="bgimg"
+                />
+
+                <div class="welcometext">
+
+                    <h1 style="font-size: 50px;"> Welcome to The World Of Books! </h1> 
+
+                    <p style="font-size: 30px;"> Find any book you want here. </p>
+
+                    <a href="pages/products.html"><input type="button" class = "button" value="Shop Now"></a>
+
+                </div>
+
+                <div class = "logo">
+
+                    <img src="images/WeSellB.png"
+                    width="550px"
+                    height="550px"
+                    />
+
+                </div>
+                
+            </div>
+
+            <div class="topbooks"> 
+
+                <img src="images/topbook.png" style="border-right:2px solid ;">
+
+                <div class = "zoombook">
+
+                    <img src="images/diana_gabaldon.jpg"> 
+                
+                    </br>
+
+                    <caption>Lord John and the Private Matter</caption>
+
+                    <br>
+
+                    <br>
+
+                    <span style="border-radius: 50%; padding: 10px; border: 2px solid; text-align: center;">&nbsp; 1 &nbsp;</span>
+
+                </div>
+
+                <div class = "zoombook">
+
+                    <img src="images/the_god.jpg"> 
+                
+                    </br>
+
+                    <caption>The God Equation</caption>
+
+                    <br>
+
+                    <br>
+
+                    <span style="border-radius: 50%; padding: 10px; border: 2px solid; text-align: center;">&nbsp; 2 &nbsp;</span>
+
+                </div>
+
+                <div class = "zoombook">
+
+                    <img src="images/the_love_of_my_life.jpg"> 
+                
+                    </br>
+
+                    <caption>The Love of My Life</caption>
+
+                    <br>
+
+                    <br>
+
+                    <span style="border-radius: 50%; padding: 10px; border: 2px solid; text-align: center;">&nbsp; 3 &nbsp; </span>
+
+                </div>
+
+            </div>
+
+            <br>
+
+            <h1 style="padding-left: 50px;">Recommended Right Now</h1>
+
+            <!-- This div contains the books which are displayed in the page -->
+            <div class="booksection">
+
+                <!-- This div is to have a zoom effect when the pointer is hovered on a book -->
+                <div class="zoombook">
+
+                    <img src="images/all_down_darkness_wide.jpg"> <br>
+                    <caption>
+
+                        All Down Darkness Wide 
+                        <br>
+                        by Seán Hewitt
+
+                    </caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="images/incredible_city.jpg"> <br>
+                    <caption>
+
+                        Incredible City
+                        <br>
+                        by Louisa Lim
+
+                    </caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="images/under_the_skin.jpg"> <br>
+                    <caption>
+
+                        Under the Skin
+                        <br>
+                        by Linda Villarosa
+
+                    </caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="images/his_name_is_George_Floyd.jpg"> <br>
+                    <caption>
+
+                        His Name Is George Floyd
+                        <br>
+                        by Robert Samuels and Toluse Olorunnipa
+
+                        </caption>
+
+                </div>
+
+            </div>
+
+            <a href="pages/products.html"><img src="images/banner.png" width="100%"></a>
+
+            <h1 style="padding-left: 50px;">New Releases</h1>
+
+            <div class = "booksection">
+
+                <div class="zoombook">
+
+                    <img src="images/will.jpg"> <br>
+                    <caption>
+
+                        Will
+                        <br>
+                        by Will Smith with Mark Manson
+
+                    </caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="images/you_are_the_best_thing.jpg"> <br>
+                    <caption>
+
+                        You Are Your Best Thing
+                        <br>
+                        by Tarana Burke and Brené Brown
+
+                    </caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="images/madhouse.jpg"> <br>
+                    <caption>
+
+                        Madhouse at the End of the Earth
+                        <br>
+                        by Julian Sancton
+
+                    </caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="images/like_streams_to_the_ocean.jpg"> <br>
+                    <caption>
+
+                        Like Streams to the Ocean
+                        <br>
+                        by Jedidiah Jenkins
+
+                    </caption>
+
+                </div>
+
+            </div>
+
+            <h1 style="padding-left: 50px;">Top Sellers Currently</h1>
+
+            <div class = "booksection">
+
+                <div class="zoombook">
+
+                    <img src="images/the_wisdom.jpg"> <br>
+                    <caption>
+
+                        The Wisdom of Inscecurity
+                        <br>
+                        by Allan Watts
+
+                    </caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="images/girl_in_pieces.jpg"> <br>
+                    <caption>
+
+                        Girl in Pieces	 
+                        <br>
+                        by Sarah J. Maas
+
+                    </caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="images/atomic_habbits.jpg"> <br>
+                    <caption>
+
+                        Atomic Habits	 
+                        <br>
+                        by James Clear
+
+                    </caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="images/house_of_sky_and_breathe.jpg"> <br>
+                    <caption>
+
+                        House of Sky and Breath	 
+                        <br>
+                        by Sarah J. Maas
+
+                    </caption>
+
+                </div>
+
+            </div>
+
+            <h1 style="padding-left: 50px;">Comming Soon</h1>
+
+            <div class = "booksection">
+
+                <div class="zoombook">
+
+                    <img src="images/Oh_William!.jpg"> <br>
+                    <caption>
+
+                        Oh William!
+                        <br>
+                        by Elizabeth Strout
+
+                    </caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="images/A_Swim_in_a_Pond_i_ the_Rain.jpg"> <br>
+                    <caption>
+
+                        A Swim in a Pond in the Rain	 
+                        <br>
+                        by George Saunders
+
+                    </caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="images/The_Reef.jpg"> <br>
+                    <caption>
+
+                        The Reef	 
+                        <br>
+                        by Nora Roberts
+
+                    </caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="images/Book_Lovers.jpg"> <br>
+                    <caption>
+
+                        Book Lovers 
+                        <br>
+                        by Emily Henry
+
+                    </caption>
+
+                </div>
+
+            </div>
+
+
+            <!-- This div contains the contents found in the footer of the page -->
+            <div class="footer">
+
+                <div class = "bname">
+
+                    <h1 style="font-family: Paytoneone;">&copy; WeSellB</h1>
+
+                    <p> 
+                        <h3>Quick Links</h3>
+
+                        <a href="index.html"><p>Home</a> <br> 
+
+                        <a href="pages/products.html">Products</a> <br>
+
+                        <a href="pages/blogs.html">Blog</a><br>
+
+                        <a href="pages/research.html">Research</a> <br>
+
+                        <a href="pages/contactus.html">Contact Us</a>
+
+                    
+                    </p> 
+
+                    <a href="https://www.instagram.com/"><img src="images/instagram_logo.png"></a>
+
+                    <a href="https://www.facebook.com/"><img src= "images/facebook_logo.png"></a>
+                        
+                    <a href="https://twitter.com/?lang=en"><img src="images/twitter_logo.png" ></a>
+
+                </div>
+
+                <!-- This div contains a logo -->
+                <div class = "blogo">
+
+                    <img src="images/WeSellB.png">
+
+                </div>
+
+            </div>
+
+        </div> 
+        
+        <script src="js/gototop.js"></script>
+    </body>
+
+</html>

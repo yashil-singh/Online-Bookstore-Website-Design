@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+		<meta name="description" content="Book Seller's Website">
+		<meta name="keywords" content="HTML, CSS, JS">
+		<meta name="author" content="Yashil Lal Singh">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>WeSellB | Products</title>
+
+        <link rel="stylesheet" href="../css/style.css">
+
+        <style type="text/css">
+
+            /* To style the div which contains the book and its details */
+			.card{
+
+                margin-left: 30px;
+                margin-right: 30px;
+				display: flex;
+				text-align: left;
+				height: 400px;
+				background: #FFF9F0;
+                padding: 50px;
+                margin-bottom: 50px;
+                transition: all .2s ease-in-out;
+                line-height: 1.5;
+
+			}
+
+            /* To set the text size for all the p tags within the card div */
+            .card p {
+
+                font-size: 18px;
+
+            }
+
+            /* To set the height and width of all the images in the card div */
+            .card img {
+
+                width: 260px;
+                height: 370px;
+
+            }
+
+            /* For the image of the book */
+			.img {
+
+				margin-top: 20px;
+				flex: 35%;
+			    text-align: center;
+
+			}
+
+            /* For the description of the book */
+			.description{
+
+				padding-right: 20px;
+				flex: 65%;
+				text-align: left;
+
+			}
+
+            /* To increase the size of the div in which the book and its description is displayed on hover */
+            .card:hover {
+
+                cursor: pointer;
+                transform: scale(1.035);
+
+            }
+
+            /* To style the div which contains the categories */
+            .categories {
+
+                background-color: #FFF9F0;
+                padding: 30px;
+                display: flex;
+                margin-left: 40px;
+                margin-right: 40px;
+                margin-bottom: 10px;
+
+            }
+
+            /* To style the div which displays the books */
+            .booksection {
+
+                padding: 50px;
+                display: flex;
+
+            }
+
+        </style>
+
+    </head>
+
+    <body>  
+
+        <button onclick="topFunction()" id="gotop">/\</button>
+
+        <div class = "main">
+
+            <div class = "header">
+
+                <h1 style="font-size: 50px;font-family: PaytoneOne;">WeSellB</h1>
+
+                <a href="../index.html"><input type="button" class="button"  value="Home"></a>
+
+                <a href="products.html"><input type="button" class="active"  value="Products"></a>
+
+                <a href="blogs.html"><input type="button" class="button" value="Blog"></a>
+
+                <a href="research.html"><input type="button" class="button" value="Research"></a>
+
+                <a href="contactus.html"><input type="button" class="button" value="Contact Us"></a>
+
+            </div>
+
+            <img src="../images/bannerWeSellB.png" width="100%" height="500px">
+
+            <h1 style="padding-left: 50px; margin-bottom: 10px; margin-top: 50px;">Categories</h1>
+
+            <br>
+
+            <h2 style="padding-left: 90px;"> Mystery and suspense </h2>
+
+            <div class = "booksection">
+
+                <div class="zoombook">
+
+                    <img src="../images/murder_club.jpg"> </br>
+                    <caption>
+
+                        The Thursday Murder Club
+                        </br>
+                        by Richard Osman
+
+                    </caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="../images/The_Shooting_at_Chateau_Rock.jpg"> </br>
+                    <caption>
+
+                        The Shooting at Chateau Rock	 
+                        </br>
+                        by Martin Walker
+
+                    </caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="../images/The_Maid.jpg"> </br>
+                    <caption>
+
+                        The Maid	 
+                        </br>
+                        by Nita Prose
+
+                    </caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="../images/Aunt_Dimity_and_the_Heart_of_Gold.jpg"> </br>
+                    <caption>
+
+                        Aunt Dimity and the Heart of Gold	 
+                        </br>
+                        by Nancy Atherton
+
+                    </caption>
+
+                </div>
+
+            </div>
+
+            <h2 style="padding-left: 90px;"> Romance </h2>
+
+            <div class = "booksection">
+
+                <div class="zoombook">
+
+                    <img src="../images/Beach_Read.jpg"> </br>
+                    <caption>
+
+                        Beach Read
+                        </br>
+                        by Emily Henry
+
+                    </caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="../images/One_Day_in_December.jpg"> </br>
+                    <caption>
+
+                        One Day in December	 
+                        </br>
+                        by Josie Silver
+
+                    </caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="../images/This_Time_Next_Year.jpg"> </br>
+                    <caption>
+
+                        This Time Next Year	 
+                        </br>
+                        by Sophie Cousens
+
+                    </caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="../images/Redeeming_Love.jpg"> </br>
+                    <caption>
+
+                        Redeeming Love 	 
+                        </br>
+                        by Francine Rivers
+
+                    </caption>
+
+                </div>
+
+            </div>
+
+            <h2 style="padding-left: 90px;"> Science Fiction & Fantasy </h2>
+
+            <div class = "booksection">
+
+                <div class="zoombook">
+
+                    <img src="../images/A_Deadly_Education.jpg"> </br>
+                    <caption>
+
+                        A Deadly Education
+                        </br>
+                        by Naomi Novik
+
+                    </caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="../images/Hex.jpg"> </br>
+                    <caption>
+
+                        Hex	 
+                        </br>
+                        by Rebecca Dinerstein Knight
+
+                    </caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="../images/Wilder_Girls.jpg"> </br>
+                    <caption>
+
+                        Wilder Girls	 
+                        </br>
+                        by Rory Power
+
+                    </caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="../images/One_of_Us_Is_Lying.jpg"> </br>
+                    <caption>
+
+                        One of Us Is Lying 	 
+                        </br>
+                        by Karen M. McManus
+
+                    </caption>
+
+                </div>
+
+            </div>
+
+            <h2 style="padding-left: 50px;">Explore More Categories</h2>
+            <!-- This div displays the various categories -->
+            <div class="categories">
+
+                <div class="zoombook">
+
+                    <img src="../images/literary-fiction.png"> 
+                
+                    </br>
+
+                    <caption>Literary Fiction</caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="../images/triad-spanish-language-fiction.png"> 
+                    
+                    </br>
+
+                    <caption>Spanish Fiction</caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="../images/teen-young-adult.png">
+                
+                    </br>
+
+                    <caption>Teen and Young Adult</caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="../images/history.png"> 
+                
+                    </br>
+
+                    <caption>History</caption>
+
+                </div>
+
+                <div class="zoombook">
+
+                    <img src="../images/cooking.png"> 
+                
+                    </br>
+
+                    <caption>Cooking</caption>
+
+                </div>
+
+            </div>
+
+            <div class = "slider">
+                
+                <div id="banner">
+
+                    <img src="../images/banner1.png"
+                    width="100%"
+                    >
+                    
+                </div>
+
+            </div>
+
+
+            <h1 style="padding-left: 50px; margin-bottom: 10px; margin-top: 50px;">Find Your Next Read</h1>
+
+            <!-- This div contains the image of the book and its description -->
+            <div class="card">
+
+				<div class="img">
+
+					<img src="../images/The_Hobbit.jpg">
+
+				</div>
+				<div class="description">
+
+					<h2>The Hobbit</h2>
+
+					<p>By J.J.R Tolkien</p>
+
+                    <h3>NRs. 720</h3>
+
+					<p>This deluxe hardcover edition of J.R.R. Tolkien's classic prelude to his Lord of the Rings trilogy contains a short introduction by Christopher Tolkien, a reset text incorporating the most up-to-date corrections, and all of Tolkien’s own drawings and full-color illustrations, including the rare “Mirkwood” piece.</p>
+
+				</div>
+
+			</div>
+
+			<div class="card" >
+
+				<div class="img">
+
+					<img src="../images/Harry_Potter.jpg">
+
+				</div>
+
+				<div class="description">
+
+					<h2>Harry Potter and the Philosopher's Stone</h2>
+
+					<p>By J. K. Rowling</p>
+
+                    <h3>NRs. 800</h3>
+
+					<p>Harry Potter and the Philosopher’s Stone, also called Harry Potter and the Sorcerer’s Stone, the first novel in the immensely popular Harry Potter series by British writer J.K. Rowling. It was first published in Britain in 1997 and appeared in the United States the following year under the title Harry Potter and the Sorcerer’s Stone. The book’s imaginative story line about a boy wizard made it an enduring hit with both children and adults.</p>
+
+				</div>
+
+			</div>
+
+            <div class="card">
+
+                <div class="img">
+
+                    <img src="../images/Maze_runner.jpg">
+
+                </div>
+                <div class="description">
+
+                    <h2>The Maze Runner</h2>
+
+                    <p>By James Dashner</p>
+
+                    <h3>NRs. 630</h3>
+
+                    <p>The Maze Runner is a 2009 young adult dystopian science fiction novel written by American author James Dashner and the first book released in The Maze Runner series. The novel was published on October 6, 2009, by Delacorte Press, an imprint of Random House, and was made into a 2014 major motion picture by 20th Century Fox, directed by Wes Ball.</p>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="img">
+
+                    <img src="../images/1984.jpg">
+
+                </div>
+                <div class="description" >
+
+                    <h2>Nineteen Eighty-Four</h2>
+
+                    <p>By George Orwell</p>
+
+                    <h3>NRs. 250</h3>
+
+                    <p>Nineteen Eighty-Four (also stylised as 1984) is a dystopian social science fiction novel and cautionary tale written by English writer George Orwell. It was published on 8 June 1949 by Secker & Warburg as Orwell's ninth and final book completed in his lifetime. Thematically, it centres on the consequences of totalitarianism, mass surveillance and repressive regimentation of people and behaviours within society. Orwell, a democratic socialist, modelled the totalitarian government in the novel after Stalinist Russia and Nazi Germany.</p>
+
+                </div>
+                
+            </div>
+
+            <div class="card">
+
+                <div class="img">
+
+                    <img src="../images/the_great_gatsby.jpg">
+
+                </div>
+                <div class="description">
+
+                    <h2>The Great Gatsby</h2>
+
+                    <p>By F. Scott Fitzgerald</p>
+
+                    <h3>NRs. 320</h3>
+
+                    <p>The Great Gatsby is a 1925 novel by American writer F. Scott Fitzgerald. Set in the Jazz Age on Long Island, near New York City, the novel depicts first-person narrator Nick Carraway's interactions with mysterious millionaire Jay Gatsby and Gatsby's obsession to reunite with his former lover, Daisy Buchanan.</p>
+
+                </div>
+                
+            </div>
+
+            <div class="card">
+
+                <div class="img">
+
+                    <img src="../images/The_Catcher_in_the_Rye.jpg">
+
+                </div>
+                <div class="description">
+
+                    <h2>The Catcher in the Rye</h2>
+
+                    <p>By J. D. Salinger</p>
+
+                    <h3>NRs. 640</h3>
+
+                    <p>The Catcher in the Rye is a novel by J. D. Salinger, partially published in serial form in 1945–1946 and as a novel in 1951. It was originally intended for adults but is often read by adolescents for its themes of angst, alienation, and as a critique on superficiality in society. It has been translated widely. </p>
+
+                </div>
+                
+            </div>
+
+            <div class="card">
+
+                <div class="img">
+
+                    <img src="../images/beloved.jpg">
+
+                </div>
+                <div class="description">
+
+                    <h2>Beloved</h2>
+
+                    <p>By Toni Morrison</p>
+
+                    <h3>NRs. 790</h3>
+
+                    <p>Sethe, its protagonist, was born a slave and escaped to Ohio, but eighteen years later she is still not free. She has too many memories of Sweet Home, the beautiful farm where so many hideous things happened. And Sethe’s new home is haunted by the ghost of her baby, who died nameless and whose tombstone is engraved with a single word: Beloved. Filled with bitter poetry and suspense as taut as a rope, Beloved is a towering achievement. </p>
+
+                </div>
+                
+            </div>
+
+            <div class="card">
+
+                <div class="img">
+
+                    <img src="../images/mockingbird.jpg">
+
+                </div>
+                <div class="description">
+
+                    <h2>To Kill a Mockingbird</h2>
+
+                    <p>By Harper Lee</p>
+
+                    <h3>NRs. 600</h3>
+
+                    <p>Compassionate, dramatic, and deeply moving, To Kill A Mockingbird takes readers to the roots of human behavior - to innocence and experience, kindness and cruelty, love and hatred, humor and pathos. Now with over 18 million copies in print and translated into forty languages, this regional story by a young Alabama woman claims universal appeal. Harper Lee always considered her book to be a simple love story. Today it is regarded as a masterpiece of American literature. </p>
+
+                </div>
+                
+            </div>
+
+            <div class="card">
+
+                <div class="img">
+
+                    <img src="../images/invisible_man.jpg">
+
+                </div>
+                <div class="description">
+
+                    <h2>Invisible Man</h2>
+
+                    <p>By Ralph Ellison</p>
+
+                    <h3>NRs. 720</h3>
+
+                    <p>Originally published in 1952 as the first novel by a then unknown author, it remained on the bestseller list for sixteen weeks and established Ralph Ellison as one of the key writers of the century. The book is a passionate and witty tour de force of style, strongly influenced by T.S. Eliot's The Waste Land, James Joyce, and Dostoevsky. </p>
+ 
+                </div>
+                
+            </div>
+
+            <div class="footer">
+
+                <div class = "bname">
+
+                    <h1 style="font-family: Paytoneone;">&copy; WeSellB</h1>
+                    <p> 
+                        <h3>Quick Links</h3>
+
+                        <a href="../index.html"><p>Home</a> <br> 
+
+                        <a href="../pages/products.html">Products</a> <br>
+
+                        <a href="../pages/blogs.html">Blog</a><br>
+
+                        <a href="../pages/research.html">Research</a> <br>
+
+                        <a href="../pages/contactus.html">Contact Us</a>
+
+                    
+                    </p> 
+
+                    <a href="https://www.instagram.com/"><img src="../images/instagram_logo.png"></a>
+
+                    <a href="https://www.facebook.com/"><img src= "../images/facebook_logo.png"></a>
+                        
+                    <a href="https://twitter.com/?lang=en"><img src="../images/twitter_logo.png" ></a>
+
+                </div>
+              
+                <div class = "blogo">
+
+                    <img src="../images/WeSellB.png">
+
+                </div>
+
+            </div>
+
+        </div> 
+
+        <script src="../js/slider.js"></script>
+
+        <script src="../js/gototop.js"></script>
+
+    </body>
+
+
+</html>
